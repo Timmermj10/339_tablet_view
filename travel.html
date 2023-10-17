@@ -10,30 +10,32 @@
 </head>
 
 <body>
-    <a href="#main">Skip to Main Content</a>
+    <a href="#main" id="skip">Skip to Main Content</a>
     <header>
         <h1>Navigation</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Pets</a>
-                </li>
-                <li>
-                    <a href="travel.html">Travel</a>
-                </li>
-                <li>
-                    <a href="recipes.html">Recipes</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Pets</a>
+                    </li>
+                    <li>
+                        <a class='active' href="travel.html">Travel</a>
+                    </li>
+                    <li>
+                        <a href="recipes.html">Recipes</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
         <h1>Travel</h1>
     </header>
 
     <main id="main">
-        <div>
+        <div class="item">
             <h2>Yellowstone</h2>
 
-            <img src="images/yellowstone_cauldron.gif" width="400" alt="Bubbling cauldron.">
+            <img class="gif" src="images/yellowstone_cauldron.gif" width="400" alt="Bubbling cauldron.">
             <img src="images/yellowstone_cauldron.jpg" width="400" alt="Bubbling cauldron">
 
             <h3>Geographical Location: North America</h3>
@@ -103,10 +105,10 @@
             <!-- Colleen van Lent -->
         </div>
 
-        <div>
+        <div class="item">
             <h2>Ari Atoll, Maldives</h2>
 
-            <img src="images/maldives.gif" width="400" alt="Bubbling cauldron.">
+            <img class="gif" src="images/maldives.gif" width="400" alt="Bubbling cauldron.">
             <img src="images/maldives_aerial.jpeg" width="400" alt="Bubbling cauldron">
 
             <h3>Geographical Location: Asia</h3>
@@ -166,10 +168,10 @@
             <!-- Aditya Kaushal -->
         </div>
 
-        <div>
+        <div class="item">
             <h2>Apostle Islands, WI</h2>
 
-            <img src="images/apostle_islands_gif.gif" width="400" alt="Bubbling cauldron.">
+            <img class="gif" src="images/apostle_islands_gif.gif" width="400" alt="Bubbling cauldron.">
             <img src="images/apostle_islands_static.jpg" width="400" alt="Bubbling cauldron">
 
             <h3>Geographical Location: North America</h3>
@@ -231,10 +233,10 @@
             <!-- Michelle Lockett -->
         </div>
 
-        <div>
+        <div class="item">
             <h2>Auckland, New Zealand</h2>
 
-            <img src="images/Auckland_Primary_Gif.gif" width="400" alt="Bubbling cauldron.">
+            <img class="gif" src="images/Auckland_Primary_Gif.gif" width="400" alt="Bubbling cauldron.">
             <img src="images/Auckland_Primary_Image.jpg" width="400" alt="Bubbling cauldron">
 
             <h3>Geographical Location: Australia</h3>
@@ -258,7 +260,6 @@
                     Located in Western Auckland, Browns Island is home to one of the oldest volcanoes. It
                     erupted over 20,000 years ago, and
                     has since been become a famous tourist destination
-                    https://www.cntraveler.com/story/how-to-explore-aucklands-volcanoes
                 </figcaption>
             </figure>
 
@@ -268,7 +269,6 @@
                 <figcaption>
                     Eden Park is New Zealand’s largest stadium located in Auckland, with a capacity of 50,000.
                     The stadium has been the country’s largest since 1910, and has hosted rugby, cricket, and soccer
-                    games. https://www.austadiums.com/news/1135/biggest-stadiums-in-new-zealand
                 </figcaption>
             </figure>
 
@@ -279,7 +279,6 @@
                     Built in the 1920s, the War Memorial Museum in AUckland is one of the oldest and most
                     significant museums in New Zealand. It serves as a homage to the country’s military, and is also a
                     research institution for social and environmental matters.
-                    https://travel.usnews.com/Auckland_New_Zealand/Things_To_Do/Auckland_War_Memorial_Museum_64075/
                 </figcaption>
             </figure>
 
@@ -290,7 +289,6 @@
                     Tiritiri Matangi Island is located in Auckland and is among the oldest wildlife sanctuaries
                     in the country. The island is brimming with animals unlikely to be found on the mainland. It is also
                     known as a nature conservancy island.
-                    https://www.tripadvisor.com/Attraction_Review-g255106-d3701674-Reviews-Tiritiri_Matangi_Island-Auckland_Central_North_Island.html#/media-atf/3701674/295577992:p/?albumid=-160&type=0&category=-160
                 </figcaption>
             </figure>
 
@@ -301,7 +299,6 @@
                     Constructed in 1954, the Auckland Harbour Bridge connects the main city to the north shore.
                     It is a bridge for motor vehicles with 8 lanes. The bridge is also equipped with 90,000 LED lights,
                     allowing it to shine bright at night.
-                    https://www.thewanderingplank.com/auckland-harbour-bridge/
                 </figcaption>
             </figure>
 

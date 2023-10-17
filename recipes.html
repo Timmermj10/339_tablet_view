@@ -10,33 +10,38 @@
 </head>
 
 <body>
-    <a href="#main">Skip to Main Content</a>
+    <a href="#main" id="skip">Skip to Main Content</a>
     <header>
         <h1>Navigation</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Pets</a>
-                </li>
-                <li>
-                    <a href="travel.html">Travel</a>
-                </li>
-                <li>
-                    <a href="recipes.html">Recipes</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Pets</a>
+                    </li>
+                    <li>
+                        <a href="travel.html">Travel</a>
+                    </li>
+                    <li>
+                        <a class='active' href="recipes.html">Recipes</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
         <h1>Recipes</h1>
     </header>
 
     <main id="main">
-        <div>
+        <div class="item">
             <h2>Double Chocolate Cookies</h2>
-            <span>Origin: Michigan</span>
-            <span>Source: Family Recipe</span>
-            <span>Category: Dessert</span>
 
-            <div><img src="images/double_chocolate_cookies.png" width="400" alt="chocolate cookies"></div>
+            <div class="info">
+                <span>Origin: Michigan</span>
+                <span>Source: Family Recipe</span>
+                <span>Category: Dessert</span>
+            </div>
+
+            <img src="images/double_chocolate_cookies.png" width="400" alt="chocolate cookies">
 
             <p>
                 My daughter learned to make these cookies at a baking camp at Zingermanns and has tweaked the recipe
@@ -44,7 +49,7 @@
                 Note, these cookies are best eaten very quickly.
             </p>
             <h3>Recipe Ingredients</h3>
-            <ul>
+            <ul class="ingredients">
                 <li>Unsalted butter</li>
                 <li>Granulated Sugar</li>
                 <li>Packed light or dark brown sugar</li>
@@ -59,7 +64,7 @@
             </ul>
 
             <h3>Recipe Steps</h3>
-            <ol>
+            <ol class="steps">
                 <li>In a mixing bowl cream together the butter, granulated sugar, and brown sugar</li>
                 <li>Add the egg and vanilla extract and beat well</li>
                 <li>Add the melted chocolate</li>
@@ -80,13 +85,16 @@
             <!-- Colleen van Lent -->
         </div>
 
-        <div>
+        <div class="item">
             <h2>Peanut Butter and Jelly Sandwich</h2>
-            <span>Origin: American</span>
-            <span>Source: Alex Likens</span>
-            <span>Category: Main Dish</span>
 
-            <div><img src="images/peanut-butter-and-jelly-sandwich.jpg" width="400" alt=""></div>
+            <div class="info">
+                <span>Origin: American</span>
+                <span>Source: Alex Likens</span>
+                <span>Category: Main Dish</span>
+            </div>
+
+            <img src="images/peanut-butter-and-jelly-sandwich.jpg" width="400" alt="">
             <p>This is a dish that is great at all times of year. Its mix of savory flavors with sweet jelly make sit a
                 favorite dish
                 for many people. This dish is great for any situation whether you are on the go, in a rush, or just
@@ -94,14 +102,14 @@
                 meal in your home.
             </p>
             <h3>Recipe Ingredients</h3>
-            <ul>
+            <ul class="ingredients">
                 <li>Bread</li>
                 <li>Peanut Butter</li>
                 <li>Jelly</li>
             </ul>
 
             <h3>Recipe Steps</h3>
-            <ol>
+            <ol class="steps">
                 <li>Take two piece of bread and place them on a plate</li>
                 <li>Put a thick layer of jelly on one piece of the bread</li>
                 <li>Put a thick layer of peanut butter on the other piece of the bread</li>
@@ -116,19 +124,22 @@
             <!-- Alexander Likens -->
         </div>
 
-        <div>
+        <div class="item">
             <h2>Sushi Bake</h2>
-            <span>Origin: Asian</span>
-            <span>Source: Own recipe</span>
-            <span>Category: Main dish</span>
 
-            <div><img src="images/sushiBake.jpeg" width="400" alt=""></div>
+            <div class="info">
+                <span>Origin: Asian</span>
+                <span>Source: Own recipe</span>
+                <span>Category: Main dish</span>
+            </div>
+
+            <img src="images/sushiBake.jpeg" width="400" alt="">
             <p>Do you want easy, quick way to enjoy sushi without having to do all of the work? Try to make our sushi
                 bake, which takes
                 10 minutes to assemble and 20 minutes to bake in the oven. Our recipe feeds 8 people.
             </p>
             <h3>Recipe Ingredients</h3>
-            <ul>
+            <ul class="ingredients">
                 <li>1 avocado</li>
                 <li>1/2 cup soon sauce</li>
                 <li>2 cups of rice</li>
@@ -141,7 +152,7 @@
             </ul>
 
             <h3>Recipe Steps</h3>
-            <ol>
+            <ol class="steps">
                 <li>Preheat oven to 350 degrees</li>
                 <li>Make rice. Mix rice vinegar into rice after it is cooked</li>
                 <li>Lay out all of the rice at the bottom of a large baking dish</li>
