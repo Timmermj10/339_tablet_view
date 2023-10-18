@@ -82,6 +82,10 @@ video {
 .item {
     border: solid 2px white;
     margin: 5px;
+    border-radius: 10px;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+    animation-delay: 1s;
 }
 
 .info,
@@ -172,12 +176,35 @@ video {
     }
 }
 
+.type {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 @media (prefers-reduced-motion) {
     .gif {
         display: none;
     }
 
-    #skip:focus {
+    #skip:focus,
+    .type,
+    .item {
         animation: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-color: pink;
     }
 }
