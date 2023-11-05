@@ -207,7 +207,7 @@ video {
 
 @media screen and (min-width: 600px) {
     body {
-        background-color: #BE93D4;
+        background-color: #E39FF6;
     }
 
     .photos {
@@ -262,7 +262,7 @@ video {
     }
 
     #skip {
-        color: #BE93D4;
+        color: #E39FF6;
     }
 
     .navbar a.active {
