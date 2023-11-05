@@ -40,7 +40,8 @@ figcaption {
     padding-top: 0px;
 }
 
-img {
+img,
+video {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -48,15 +49,6 @@ img {
     margin-top: 10px;
     width: 80%;
     border: dashed white 2px;
-}
-
-video {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    width: 80%;
 }
 
 /* .likes {
@@ -166,6 +158,10 @@ video {
     animation-duration: 1s;
 }
 
+.travel_img {
+    display: none;
+}
+
 @keyframes skipping {
     0% {
         top: -100px
@@ -203,6 +199,131 @@ video {
         animation: none;
         opacity: 1;
     }
+
+    .travel_img {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        background-color: #BE93D4;
+    }
+
+    .photos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .photos_food {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .photos a {
+        width: 90%;
+        height: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+
+    .photos_food a {
+        width: 90%;
+        height: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+
+    .photos a * {
+        width: 100%;
+        height: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .photos_food a * {
+        width: 100%;
+        height: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .photos_food a:nth-child(3) {
+        grid-column: span 2;
+    }
+
+    #skip {
+        color: #BE93D4;
+    }
+
+    .navbar a.active {
+        background-color: #600080;
+    }
+
+    .info_travel,
+    .methods {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .photos_travel {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .photos_travel figure:nth-child(5) {
+        grid-column: span 2;
+    }
+
+    .steps,
+    .ingredients {
+        margin: 30px;
+    }
+
+    .photos_food {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.comment-section {
+    border: #000 solid 2px;
+    margin: 1%;
+    margin-bottom: 5%;
+}
+
+.comment-section input {
+    border: #000 solid 2px;
+    width: 70%;
+    margin: 2%;
+    padding: 1%;
+}
+
+.comment-section button {
+    margin: 2%;
+    padding: 1%;
+    border: #000 solid 2px;
+    width: 15%;
+    float: right;
+    text-align: center;
+}
+
+.comment-section ul {
+    border: #000 solid 2px;
+    padding: 1%;
+    margin: 2%;
+    white-space: normal;
+    height: auto;
+    word-wrap: break-word;
 }
 
 @media screen and (min-width: 768px) {
